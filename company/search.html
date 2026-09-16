@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pearson Specter - Buscar Funcionário</title>
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav">
+
+            <div id="logo">
+                <a href="index.html">
+                    <img src="./img/Pearson_Specter.webp" alt="Logo Pearson Specter">
+                </a>
+            </div>
+
+            <ul id="links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html#funcionarios">
+                        Conheça o nosso trabalho
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#cadastro">
+                        Cadastre o funcionário
+                    </a>
+                </li>
+
+                <li>
+                    <a href="search.html">
+                        Buscar funcionário
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="register-section">
+
+            <div class="section-title">
+
+                <span>Pesquisa de funcionários</span>
+
+                <h2>Buscar funcionário por cargo</h2>
+
+                <p>
+                    Selecione um cargo ou digite o cargo que deseja buscar.
+                </p>
+
+            </div>
+
+
+            <form action="./php/search.php" method="post">
+
+                <div class="fields">
+
+                    <label for="positionSelect">
+                        Selecione um cargo
+                    </label>
+
+                    <select name="positionSelect" id="positionSelect">
+
+                        <option value="">
+                            Selecione um cargo
+                        </option>
+
+                        <option value="Advogado">
+                            Advogado
+                        </option>
+
+                        <option value="Sócio Sênior">
+                            Sócio Sênior
+                        </option>
+
+                        <option value="Sócio Júnior">
+                            Sócio Júnior
+                        </option>
+
+                        <option value="Assistente Jurídico">
+                            Assistente Jurídico
+                        </option>
+
+                        <option value="Estagiário">
+                            Estagiário
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="fields">
+
+                    <label for="position">
+                        Ou digite um cargo
+                    </label>
+
+                    <input type="text" name="position" id="position" placeholder="Digite o cargo que deseja buscar:">
+
+                </div>
+
+
+                <button type="submit">
+                    Buscar funcionário
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Pearson Specter
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
