@@ -102,7 +102,7 @@ include_once(__DIR__ . '/connection.php');
 
                 if ($searchPosition == '') {
 
-                    echo "<h1>Digite ou selecione um cargo!</h1>";
+                    echo "<h3>Digite ou selecione um cargo!</h3>";
 
                 } else {
 
