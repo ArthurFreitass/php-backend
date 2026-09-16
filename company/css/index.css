@@ -315,9 +315,6 @@ img {
     color: #555555;
 }
 
-
-/* CADASTRO */
-
 .register-section {
     width: min(1200px, 90%);
 
@@ -325,11 +322,6 @@ img {
 
     padding: 80px 0 100px;
 }
-
-
-/* =========================
-   FORMULÁRIO DE CADASTRO
-========================= */
 
 .register-section form {
     width: 100%;
@@ -355,9 +347,6 @@ img {
     gap: 25px 30px;
 }
 
-
-/* CAMPOS */
-
 .fields {
     display: flex;
 
@@ -366,15 +355,9 @@ img {
     gap: 8px;
 }
 
-
-/* ENDEREÇO OCUPA A LINHA INTEIRA */
-
 .fields:nth-child(5) {
     grid-column: 1 / -1;
 }
-
-
-/* LABEL */
 
 .fields label {
     color: #222222;
@@ -385,9 +368,6 @@ img {
 
     letter-spacing: 0.3px;
 }
-
-
-/* INPUTS */
 
 .fields input {
     width: 100%;
@@ -414,22 +394,13 @@ img {
         background-color 0.3s;
 }
 
-
-/* PLACEHOLDER */
-
 .fields input::placeholder {
     color: #999999;
 }
 
-
-/* HOVER */
-
 .fields input:hover {
     border-color: #999999;
 }
-
-
-/* FOCUS */
 
 .fields input:focus {
     border-color: crimson;
@@ -440,17 +411,11 @@ img {
         0 0 0 3px rgba(220, 20, 60, 0.12);
 }
 
-
-/* DATA */
-
 .fields input[type="date"] {
     cursor: pointer;
 
     color: #555555;
 }
-
-
-/* BOTÃO */
 
 .register-section form button {
     grid-column: 1 / -1;
@@ -482,8 +447,6 @@ img {
 }
 
 
-/* BOTÃO HOVER */
-
 .register-section form button:hover {
     background-color: #a70e2d;
 
@@ -493,19 +456,11 @@ img {
         0 8px 20px rgba(220, 20, 60, 0.25);
 }
 
-
-/* BOTÃO CLICK */
-
 .register-section form button:active {
     transform: translateY(0);
 
     box-shadow: none;
 }
-
-
-/* =========================
-   RESPONSIVIDADE DO FORM
-========================= */
 
 @media (max-width: 750px) {
 
@@ -528,9 +483,6 @@ img {
     }
 
 }
-
-
-/* CELULAR */
 
 @media (max-width: 500px) {
 
