@@ -1,0 +1,154 @@
+.response-container {
+    width: 100%;
+    padding: 40px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.response-card {
+    width: 100%;
+    max-width: 600px;
+
+    padding: 45px 40px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+
+    border-top: 6px solid #f5c400;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.response-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #f5c400;
+    color: #111111;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.response-card h2 {
+    margin-bottom: 15px;
+
+    color: #111111;
+
+    font-size: 28px;
+}
+
+.response-card p {
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.response-card strong {
+    color: #111111;
+}
+
+.response-actions {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.response-button {
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    background-color: #f5c400;
+    color: #111111;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.response-button:hover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.secondary-button {
+    background-color: #eeeeee;
+    color: #111111;
+}
+
+.secondary-button:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.success-card {
+    border-top-color: #f5c400;
+}
+
+.success-card .response-icon {
+    background-color: #f5c400;
+    color: #111111;
+}
+
+.error-card {
+    border-top-color: #111111;
+}
+
+.error-card .response-icon {
+    background-color: #111111;
+    color: #f5c400;
+}
+
+.error-message {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #eeeeee;
+
+    border-left: 4px solid #111111;
+
+    color: #444444;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    word-break: break-word;
+}
+
+@media (max-width: 550px) {
+
+    .response-card {
+        padding: 35px 22px;
+    }
+
+    .response-card h2 {
+        font-size: 25px;
+    }
+
+    .response-actions {
+        flex-direction: column;
+    }
+
+    .response-button {
+        width: 100%;
+    }
+
+}
