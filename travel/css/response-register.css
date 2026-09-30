@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --orange-primary: #f97316;
+    --orange-dark: #ea580c;
+    --orange-darker: #c2410c;
+    --orange-light: #fff7ed;
+
+    --green: #16a34a;
+    --green-light: #f0fdf4;
+
+    --red: #dc2626;
+    --red-light: #fef2f2;
+
+    --background: #fffaf5;
+    --surface: #ffffff;
+
+    --text-primary: #27272a;
+    --text-secondary: #71717a;
+
+    --border: #e4e4e7;
+
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.09);
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--background);
+
+    color: var(--text-primary);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+
+    padding: 20px 8%;
+
+    background-color: var(--orange-primary);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.logo {
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.nav a {
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+
+/* MAIN */
+
+.main {
+    flex: 1;
+
+    width: 100%;
+
+    padding: 70px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* RESPONSE */
+
+.response-card {
+    width: 100%;
+    max-width: 620px;
+
+    padding: 50px 45px;
+
+    background-color: var(--surface);
+
+    border-radius: 16px;
+
+    box-shadow: var(--shadow);
+
+    text-align: center;
+
+    border-top: 5px solid var(--orange-primary);
+}
+
+
+.status-symbol {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 34px;
+    font-weight: bold;
+}
+
+
+.success .status-symbol {
+    background-color: var(--green-light);
+    color: var(--green);
+}
+
+
+.error .status-symbol {
+    background-color: var(--red-light);
+    color: var(--red);
+}
+
+
+.success {
+    border-top-color: var(--green);
+}
+
+
+.error {
+    border-top-color: var(--red);
+}
+
+
+.status-text {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--orange-dark);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.response-card h1 {
+    margin-bottom: 18px;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+}
+
+
+.response-card p {
+    max-width: 470px;
+
+    margin: 0 auto;
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.help-text {
+    margin-top: 8px !important;
+
+    font-size: 14px !important;
+}
+
+
+/* ACTIONS */
+
+.actions {
+    margin-top: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+
+.button {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.primary-button {
+    background-color: var(--orange-primary);
+
+    color: white;
+}
+
+
+.primary-button:hover {
+    background-color: var(--orange-dark);
+}
+
+
+.secondary-button {
+    background-color: var(--orange-light);
+
+    color: var(--orange-dark);
+
+    border: 1px solid #fed7aa;
+}
+
+
+.secondary-button:hover {
+    background-color: #ffedd5;
+}
+
+
+.button:active {
+    transform: scale(0.97);
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+
+    padding: 24px;
+
+    background-color: var(--orange-darker);
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 18px 5%;
+    }
+
+
+    .main {
+        padding: 45px 18px;
+    }
+
+
+    .response-card {
+        padding: 38px 22px;
+    }
+
+
+    .response-card h1 {
+        font-size: 27px;
+    }
+
+
+    .actions {
+        flex-direction: column;
+    }
+
+
+    .button {
+        width: 100%;
+    }
+
+}
